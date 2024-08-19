@@ -1,1 +1,3 @@
 rootProject.name = 'events'
+include 'modules:models'
+

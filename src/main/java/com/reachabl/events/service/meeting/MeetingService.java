@@ -6,7 +6,9 @@ import java.util.List;
 
 public interface MeetingService {
 
-   void saveMeeting(Meeting meeting);
+   Meeting saveMeeting(Meeting meeting);
 
    List<Meeting> getUserMeetings();
+
+   boolean deleteMeeting(String meetingId);
 }

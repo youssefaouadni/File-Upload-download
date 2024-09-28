@@ -16,6 +16,6 @@ public class SetupReminderEventListener {
 
     @EventListener
     public void onSetupReminder(SetupReminderEvent event) {
-        reminderService.scheduleReminder(event.getEventTime(), event.getProfiles(), event.getReminder(), event.getZoneId());
+        reminderService.scheduleReminder(event.getEventTime(), event.getProfiles(), event.getReminder(), event.getZoneId(),event.getMeetingTopic());
     }
 }
